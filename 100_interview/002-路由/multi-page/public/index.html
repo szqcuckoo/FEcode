@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- 
+        多页面 ==> 针对当前 tab 页面显示哪一个HTML页面来说的，HTML 是多页面中的页面的要素
+                    多个 HTML 之间的跳转组成了多页面程序
+
+        URL  ==> 后端 ==>  RestFul API 规则
+            http://localhost:3000/list  ==>  list.html
+            http://localhost:3000   ==== > index.html
+
+            1. 请求后端 API         http://localhost:3000/list
+            2. 浏览器  => 服务器 发送请求  
+            3. list API ==> 返回 一个 list.html
+            4. API 向客户端响应了一个 list.html 文件
+            5. 浏览器接收到该文件响应
+            6. 解析 HTML （决定了当前 tab 页面要做一个跳转任务） DOM  渲染。。。
+     -->
+    <h1>Home</h1>
+    <a href="http://localhost:3000/list">To List</a>
+</body>
+</html>

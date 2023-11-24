@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+        单页面 | 多页面  ==>  页面的显示是靠多个 html 还是靠 js 来切换内容
+
+        多页面： 向服务器请求新的HTML文件来切换显示新的内容
+        单页面：通过一个HTML文件，通过JS来控制这个HTML中应该显示什么内容
+                单页应用是不需要靠服务器来返回新的HTML内容
+
+                单页面的路由是什么？
+                    就是显示什么内容的标识（
+                        1. URL 路由标识
+                        2. 控制单页面（HTML）显示内容
+                    ）
+
+                对于标识，有两种
+                hash模式：#其实是一种 URL 的截断
+                        # 及后面的内容是浏览器端识别的内容，#前面的内容才是真正要向服务器请求的 URL
+                history模式  ==> 背后还是 RestFul 的路由
+     -->
+
+    <div id="app"></div>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
